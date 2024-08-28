@@ -231,9 +231,10 @@
 	{ 'src': /(:)/g, 'dest': ':' },
 	{ 'src': /(ː)/g, 'dest': ':' },
         { 'src': /(ˈ)/g, 'dest': "'" },
-        { 'src': /([)/g, 'dest': "" },
-	{ 'src': /(])/g, 'dest': "" },
-	{ 'src': /(/)/g, 'dest': "" },
+	{ 'src': /(\u0027)/g, 'dest': "'" },     	
+        { 'src': /(\u005B)/g, 'dest': "" },
+	{ 'src': /(\u005D)/g, 'dest': "" },
+	{ 'src': /(\u002F)/g, 'dest': "" },
       ];
 
       for (var i = 0; i < mappings.length; i++) {
