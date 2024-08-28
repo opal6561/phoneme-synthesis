@@ -137,13 +137,6 @@
 
       //translate
       var mappings = [
-        { 'src': /^\s*\//g, 'dest': '' },
-        { 'src': /\/\s*$/g, 'dest': '' },
-        { 'src': /(\.)/g, 'dest': '%' },
-        { 'src': /(\u02c8)/g, 'dest': '\'' },
-        { 'src': /(\u02cc)/g, 'dest': ',' },
-        { 'src': /\u0361(.)/g, 'dest': '$1\'' },  
-        { 'src': /3$/g, 'dest': 'R' }
 	{ 'src': /(au)/g, 'dest': 'aU' },
         { 'src': /(aʊ)/g, 'dest': 'aU' },
         { 'src': /(ao)/g, 'dest': 'aU' },
@@ -239,10 +232,8 @@
 	{ 'src': /(:)/g, 'dest': ':' },
 	{ 'src': /(ː)/g, 'dest': ':' },
         { 'src': /(ˈ)/g, 'dest': "" },
-	{ 'src': /(\u0027)/g, 'dest': "" },     	
-        { 'src': /(\u005B)/g, 'dest': "" },
-	{ 'src': /(\u005D)/g, 'dest': "" },
-	{ 'src': /(\u002F)/g, 'dest': "" },
+        { 'src': /(\'k)+/g, 'dest': 'k\'' },  
+        { 'src': /(\ˈk)+/g, 'dest': 'k\'' },  
       ];
 
       for (var i = 0; i < mappings.length; i++) {
