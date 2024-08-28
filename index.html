@@ -230,6 +230,10 @@
         { 'src': /(ʔ)/g, 'dest': '?' },
 	{ 'src': /(:)/g, 'dest': ':' },
 	{ 'src': /(ː)/g, 'dest': ':' },
+        { 'src': /(ˈ)/g, 'dest': "'" },
+        { 'src': /([)/g, 'dest': "" },
+	{ 'src': /(])/g, 'dest': "" },
+	{ 'src': /(/)/g, 'dest': "" },
       ];
 
       for (var i = 0; i < mappings.length; i++) {
