@@ -244,27 +244,6 @@
         { 'src': /(ʔ)/g, 'dest': '?' }
 	{ 'src': /(:)/g, 'dest': ':' }
 	{ 'src': /(ː)/g, 'dest': ':' },
-	 // special edits
-        { 'src': /(k\'a2n)/g, 'dest': 'k\'@n' },
-        { 'src': /(ka2n)/g, 'dest': 'k@n' },
-        { 'src': /(gg)/g, 'dest': 'g' },
-        { 'src': /(@U)/g, 'dest': 'oU' },
-        { 'src': /rr$/g, 'dest': 'r' },
-        { 'src': /3r$/g, 'dest': '3:' },
-        { 'src': /([iU]|([AO]:))@r$/g, 'dest': '$1@' },
-        { 'src': /([^e])@r/g, 'dest': '$1:3' },
-        { 'src': /e@r$/g, 'dest': 'e@' },
-        { 'src': /e@r([bdDfghklmnNprsStTvwjzZ])/g, 'dest': 'e@$1' },
-        // edits arising from testing
-        { 'src': /(\'k)+/g, 'dest': 'k\'' },  
-        { 'src': /(\ː)+/g, 'dest': ':' },
-        { 'src': /(\:)+/g, 'dest': ':' },      
-        { 'src': /(ᵻ)/g, 'dest': 'I' },
-        { 'src': /(ɜ)/g, 'dest': '3' },  
-        { 'src': /(ɔ)/g, 'dest': 'O' },  
-        // feedback from formantzero via r/linguistics
-        { 'src': /\u0361(.)/g, 'dest': '$1\'' },  
-        { 'src': /3$/g, 'dest': 'R' }
       ]; 
 
       for (var i = 0; i < mappings.length; i++) {
