@@ -136,21 +136,7 @@
       }
 
       //translate
-      var mappings = [
-        { 'src': /^\s*\//g, 'dest': '' },
-        { 'src': /\/\s*$/g, 'dest': '' },
-        { 'src': /(\.)/g, 'dest': '%' },
-        { 'src': /(\u02c8)/g, 'dest': '\'' },
-        { 'src': /(\u02cc)/g, 'dest': ',' },
-        { 'src': /(\u0251)/g, 'dest': 'A:' },
-        { 'src': /(\u02d0)/g, 'dest': ':' },
-        { 'src': /(\u0251\u02d0)/g, 'dest': 'A' },
-        { 'src': /(\u0251\u0279)/g, 'dest': 'A' },
-        { 'src': /(a\u02d0)/g, 'dest': 'A' },
-        // feedback from formantzero via r/linguistics
-        { 'src': /(\u0329)/g, 'dest': 'r' },        
-        // feedback from scharfes_s via r/linguistics
-        { 'src': /(\u027e)/g, 'dest': 't' },  
+      var mappings = [ 
         { 'src': /(æ)/g, 'dest': 'a' },
         { 'src': /(a)/g, 'dest': 'a' },
         { 'src': /(ʌ)/g, 'dest': 'V' },
